@@ -1,0 +1,9 @@
+- name: copying template
+  hosts: all
+  become: true
+  tasks:
+  - name: copy template
+    template:
+      src: hello.j2
+      dest: /machineinfo.txt
+  
