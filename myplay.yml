@@ -1,6 +1,6 @@
 - name: copying template
   hosts: all
-  gather_facts: false
+  gather_facts: true
   become: true
   tasks:
   - name: copy template
